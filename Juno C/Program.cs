@@ -36,7 +36,7 @@ for (Bootloader = 27; Bootloader > 0; Bootloader = 27)
         Console.WriteLine("Functions");
         Console.WriteLine(" - File Menu");
     }
-    else if (TemporaryCommand == "Bootloader - File Menu")
+    else if (TemporaryCommand == "File Menu")
     {
         Console.WriteLine("File Menu");
         Console.WriteLine("- Directory");
@@ -50,6 +50,10 @@ for (Bootloader = 27; Bootloader > 0; Bootloader = 27)
     else if (TemporaryCommand == "Juno System Files")
     {
         Console.WriteLine("This file is protected by the Juno Kernel. Access is denied.");
+    }
+    else if (TemporaryCommand == "Clear")
+    {
+        Console.Clear();
     }
     else
     {
