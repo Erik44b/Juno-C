@@ -1,5 +1,5 @@
 var Bootloader = 0;
-var Version = "27";
+var Version = "Version 27";
 var VersionInt = 27;
 Console.WriteLine("Juno C");
 Console.WriteLine("Version 27");
@@ -19,7 +19,7 @@ for (Bootloader = 27; Bootloader > 0; Bootloader = 27)
     {
         Console.WriteLine(" ");
         Console.WriteLine("Juno C");
-        Console.WriteLine("Version 27");
+        Console.WriteLine(Version);
     }
     else if (TemporaryCommand == "Directory")
     {
@@ -28,6 +28,28 @@ for (Bootloader = 27; Bootloader > 0; Bootloader = 27)
         Console.WriteLine("- Bootloader");
         Console.WriteLine("- Version");
         Console.WriteLine("- Directory");
+    }
+    else if (TemporaryCommand == "Bootloader")
+    {
+        Console.WriteLine("Juno C Bootloader");
+        Console.WriteLine("Version 27");
+        Console.WriteLine("Functions");
+        Console.WriteLine(" - File Menu");
+    }
+    else if (TemporaryCommand == "Bootloader - File Menu")
+    {
+        Console.WriteLine("File Menu");
+        Console.WriteLine("- Directory");
+        Console.WriteLine("  - DirectoryLog");
+        Console.WriteLine("- Version");
+        Console.WriteLine("  - VersionInt");
+        Console.WriteLine("- Bootloader");
+        Console.WriteLine("  - File Menu");
+        Console.WriteLine("  - Juno System Files");
+    }
+    else if (TemporaryCommand == "Juno System Files")
+    {
+        Console.WriteLine("This file is protected by the Juno Kernel. Access is denied.");
     }
     else
     {
