@@ -12,14 +12,26 @@ else if (Bootloader == 0)
     if (Bootloader == 27)
         Console.WriteLine("The Bootloader has been Installed Successfully.");
 Console.WriteLine("Juno C >");
-var TemporaryCommand = Console.ReadLine();
-if (TemporaryCommand == "Version")
+for (Bootloader = 27; Bootloader > 0; Bootloader = 27)
 {
-    Console.WriteLine(" ");
-    Console.WriteLine("Juno C");
-    Console.WriteLine("Version 27");
-}
-else
-{
-    Console.WriteLine("Command Not Found.");
+    var TemporaryCommand = Console.ReadLine();
+    if (TemporaryCommand == "Version")
+    {
+        Console.WriteLine(" ");
+        Console.WriteLine("Juno C");
+        Console.WriteLine("Version 27");
+    }
+    else if (TemporaryCommand == "Directory")
+    {
+        Console.WriteLine("Directory");
+        Console.WriteLine("--------------");
+        Console.WriteLine("- Bootloader");
+        Console.WriteLine("- Version");
+        Console.WriteLine("- Directory");
+    }
+    else
+    {
+        Console.WriteLine("Command Not Found.");
+    }
+
 }
